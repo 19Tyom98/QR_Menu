@@ -1,0 +1,14 @@
+import React from 'react'
+import './Logo_page.css'
+import { SiCoffeescript } from "react-icons/si";
+
+export default function Logo_page() {
+  return (
+    <div className='logo_page'>
+        <div className="logo">
+            <h1><SiCoffeescript /></h1>
+            <h2>COFFEE CAFE</h2>
+        </div>
+    </div>
+  )
+}

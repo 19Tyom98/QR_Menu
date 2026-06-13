@@ -22,22 +22,20 @@ function App() {
 
   return (
     <Context.Provider value={values}>
-      <Router>
-        <div className="App">
-          <LogoPage />
-          <Header />
+  <div className="App">
+    <LogoPage />
+    <Header />
 
-          <Routes>
-            <Route path="/" element={<Coffee />} />
-            <Route path="/Breakfast" element={<Breakfast />} />
-            <Route path="/Burgers" element={<Burgers />} />
-            <Route path="/Desserts" element={<Desserts />} />
-            <Route path="/Drinks" element={<Drinks />} />
-          </Routes>
+    <Routes>
+      <Route path="/" element={<Coffee />} />
+      <Route path="/Breakfast" element={<Breakfast />} />
+      <Route path="/Burgers" element={<Burgers />} />
+      <Route path="/Desserts" element={<Desserts />} />
+      <Route path="/Drinks" element={<Drinks />} />
+    </Routes>
 
-        </div>
-      </Router>
-    </Context.Provider>
+  </div>
+</Context.Provider>
   );
 }
 

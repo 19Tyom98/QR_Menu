@@ -68,7 +68,7 @@ export default function Burgers() {
           </div>
           <div className="sales_menu">
           {
-                burgers_menu .map(item => {
+                burgers_menu.map(item => {
                   return <div className="sales">
                     <div className="img">
                       <img src={item.img} alt="#" />

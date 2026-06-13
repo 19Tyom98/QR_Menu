@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './Components/Header';
-import Logo_page from './Components/Logo_page';
+import LogoPage from './Components/LogoPage'
 import{ Context } from './Components/Context'
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -21,7 +21,7 @@ function App() {
   return (
     <Context.Provider value={valus}>
     <div className="App">
-      <Logo_page />
+      <LogoPage />
       <Header />
       <Routes>
         <Route path="/" element={<Coffee />} />

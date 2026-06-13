@@ -67,7 +67,7 @@ export default function Drinks() {
           </div>
           <div className="sales_menu">
           {
-                drinks_menu .map(item => {
+                drinks_menu.map(item => {
                   return <div className="sales">
                     <div className="img">
                       <img src={item.img} alt="#" />

@@ -1,5 +1,5 @@
 import React from 'react'
-import './Logo_page.css'
+import './LogoPage.css'
 import { SiCoffeescript } from "react-icons/si";
 
 export default function Logo_page() {

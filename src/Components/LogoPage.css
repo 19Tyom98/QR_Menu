@@ -4,25 +4,36 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #d1d1d1;
     background: #F8F4E3;
-    position: sticky;
-    top: 0;
+    z-index: 100;
 }
 
 .logo_page .logo { 
-    width: 300px;
-    height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #4B2E2E;
     font-weight: bold;
-svg {
-    font-size: 1.5em;
 }
+
+.logo_page .logo h1 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo_page .logo svg {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+.logo_page .logo h2 {
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    margin: 0;
 }
 
 @media (max-width: 768px) {
@@ -30,35 +41,11 @@ svg {
       height: 70px;
     }
   
-    .logo_page .logo {
-      width: 200px;
-    }
-  
     .logo_page .logo svg {
-      font-size: 1.2em;
+      font-size: 1.4em;
     }
-  }
 
-  @media (min-width: 768px) and (max-width: 1024px) {
-    .logo_page {
-      height: 80px;
+    .logo_page .logo h2 {
+        font-size: 0.9em;
     }
-  
-    .logo_page .logo {
-      width: 250px;
-    }
-  
-    .logo_page .logo svg {
-      font-size: 1.3em;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .logo_page {
-      height: 100px;
-    }
-  
-    .logo_page .logo {
-      width: 300px;
-    }
-  }
+}
